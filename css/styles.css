@@ -1,17 +1,19 @@
 .calculadora{
-    display:block;
-    margin:0 auto;
-    padding:20px;
-    background-color:#2980b9;
-    width:300px;
-    height:500px;
-    border-radius: 25px;
+    margin:auto;
+    padding: 2.5% 5%;
+    background-color:#A3EEE9;
+    width:100%;
+    height:98vh;
+    border-radius: 15px;
 }
-.calculadora td button{
-display:block;
-width:70px;
-height: 70px;
-font-size: 25px;
+.calculadora td button.numero,
+.calculadora td button.operador
+{
+    display:block;
+    width:100%;
+    height: 100%;
+    font-size: 25px;
+    border-radius: 15px;
 }
 #creditos{
 display:block;
@@ -22,13 +24,72 @@ width:300px;
 }
 #resultado{
 display:block;
-text-align: center;
+text-align: right;
 font-size: 40px;
-margin-bottom: 50px;
-width:300px;
-height: 100px;
+width:100%;
+height: 100%;
 line-height: 100px;
 background-color:#fff;
-border-radius: 25px;
-overflow-y: scroll;
+border-radius: 15px;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.resultado {
+    width: 100%;
+    height: 30%;
+}
+
+.operador {
+    background: #FFFAE8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #DDAE09;
+    border: none;
+}
+
+.numero {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+td{
+    padding: 0.5%;
+    text-align: center;
+}
+
+.switch{
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+.switch > span {
+    width: 30px;
+    height: 30px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.switch-container{
+    height: 8%;
+}
+
+@media (max-width: 640px) {
+    .calculadora{
+        padding: 5%;
+    }
+    td{
+        padding: 2% 1%;
+    }
+
+    .resultado{
+        height: 30%;
+    }
+ } 
+

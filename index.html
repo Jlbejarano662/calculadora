@@ -6,42 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body onload="init();">
     <table class="calculadora">
         <tr>
-            <td colspan="4"><span id="resultado"></span></td>
+            <td colspan="4" class="switch-container">
+                <button class="switch" id="switch">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                          </svg>
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                          </svg>
+                    </span>
+                </button>
+            </td>
         </tr>
         <tr>
-            <td><button id="siete">7</button></td>
-            <td><button id="ocho">8</button></td>
-            <td><button id="nueve">9</button></td>
-            <td><button id="division">/</button></td>
+            <td colspan="4" class="resultado">
+                <span id="resultado"></span>
+            </td>
         </tr>
         <tr>
-            <td><button id="cuatro">4</button></td>
-            <td><button id="cinco">5</button></td>
-            <td><button id="seis">6</button></td>
-            <td><button id="multiplicacion">*</button></td>
+            <td><button id="siete" class="numero">7</button></td>
+            <td><button id="ocho" class="numero">8</button></td>
+            <td><button id="nueve" class="numero">9</button></td>
+            <td><button id="division" class="operador">/</button></td>
         </tr>
         <tr>
-            <td><button id="uno">1</button></td>
-            <td><button id="dos">2</button></td>
-            <td><button id="tres">3</button></td>
-            <td><button id="resta">-</button></td>
+            <td><button id="cuatro" class="numero">4</button></td>
+            <td><button id="cinco" class="numero">5</button></td>
+            <td><button id="seis" class="numero">6</button></td>
+            <td><button id="multiplicacion" class="operador">*</button></td>
         </tr>
         <tr>
-            <td><button id="igual">=</button></td>
-            <td><button id="reset">C</button></td>
-            <td><button id="cero">0</button></td>
-            <td><button id="suma">+</button></td>
+            <td><button id="uno" class="numero">1</button></td>
+            <td><button id="dos" class="numero">2</button></td>
+            <td><button id="tres" class="numero">3</button></td>
+            <td><button id="resta" class="operador">-</button></td>
         </tr>
         <tr>
-            <td colspan="4"><span id="creditos">Hecho para DenisseEstrada.com</span></td>
+            <td><button id="cero" class="numero">0</button></td>
+            <td><button id="reset" class="operador">c</button></td>
+            <td><button id="igual" class="operador">=</button></td>
+            <td><button id="suma" class="operador">+</button></td>
         </tr>
     </table>
     <script src="js/functions.js"></script>
+
 </body>
 </html>
