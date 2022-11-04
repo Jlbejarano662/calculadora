@@ -21,8 +21,9 @@
 
 /* Dimensiones a la "pantalla de resultado" */
 #resultado {
-    display:block;
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     font-size: 40px;
     width:100%;
     height: 100%;
@@ -91,6 +92,7 @@ td {
 @media (max-width: 640px) {
     .calculadora {
         padding: 5%;
+        height:90vh;
     }
 
     td {
@@ -117,7 +119,7 @@ color: #FFFFFF;
 .calculadora.dark td .switch,
 .calculadora.dark td #resultado
 {
-background-color: #232121;
+background-color: #606060;
 color: #FFFFFF;
 }
 
