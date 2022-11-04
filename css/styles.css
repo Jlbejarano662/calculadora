@@ -92,7 +92,7 @@ td {
 @media (max-width: 640px) {
     .calculadora {
         padding: 5%;
-        height:90vh;
+        height:95vh;
     }
 
     td {
