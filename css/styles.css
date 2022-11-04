@@ -1,4 +1,5 @@
-.calculadora{
+/* Dimensiones del contenido*/
+.calculadora {
     margin:auto;
     padding: 2.5% 5%;
     background-color:#F19696;
@@ -6,6 +7,8 @@
     height:98vh;
     border-radius: 15px;
 }
+
+/* Dimensiones de los botones*/
 .calculadora td button.numero,
 .calculadora td button.operador
 {
@@ -15,23 +18,18 @@
     font-size: 25px;
     border-radius: 15px;
 }
-#creditos{
-display:block;
-padding-top:20px;
-color:#fff;
-text-align: center;
-width:300px;
-}
-#resultado{
-display:block;
-text-align: right;
-font-size: 40px;
-width:100%;
-height: 100%;
-line-height: 100px;
-background-color:#fff;
-border-radius: 15px;
-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Dimensiones a la "pantalla de resultado" */
+#resultado {
+    display:block;
+    text-align: right;
+    font-size: 40px;
+    width:100%;
+    height: 100%;
+    line-height: 100px;
+    background-color:#fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .resultado {
@@ -39,25 +37,26 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     height: 30%;
 }
 
+/* Colores y estilos a los botones de operaciones*/
 .operador {
     background: #FFFAE8;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     color: #DDAE09;
     border: none;
 }
-
+/*colores y estilos a los botones de número*/
 .numero {
     background: #FFFFFF;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
 }
-
-td{
+/* Da el margen entre los botones*/
+td {
     padding: 0.5%;
     text-align: center;
 }
-
-.switch{
+/*Estilos botón modo día y modo noche */
+.switch {
     border: none;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -75,39 +74,45 @@ td{
     align-items: center;
 }
 
-/* span, button{
-    font-size: clamp(37px, 65px, 75px ) !important;
-} */
-
-.desactivado{
-    color: rgba(0, 0, 0, 0.23);
- }
 .switch-container{
     height: 8%;
 }
 
+.desactivado{
+    color: rgba(0, 0, 0, 0.23);
+ }
+
+
+/* span, button{
+    font-size: clamp(37px, 65px, 75px ) !important;
+} */
+
+/* Estilos para pantallas de celulares */
 @media (max-width: 640px) {
-    .calculadora{
+    .calculadora {
         padding: 5%;
     }
-    td{
+
+    td {
         padding: 2% 1%;
     }
 
-    .resultado{
+    .resultado {
         height: 30%;
     }
- } 
+} 
 
-.dark{
+ /* Modo noche */
+.dark {
     background: #000000;
     color: #FFFFFF;
 }
-.calculadora.dark td button.operador
-{
+
+.calculadora.dark td button.operador {
 background-color: #C8A016;
 color: #FFFFFF;
 }
+
 .calculadora.dark td button.numero,
 .calculadora.dark td .switch,
 .calculadora.dark td #resultado
@@ -116,7 +121,7 @@ background-color: #232121;
 color: #FFFFFF;
 }
 
-.dark .desactivado{
+.dark .desactivado {
    color:  rgba(255, 255, 255, 0.38);
 }
 

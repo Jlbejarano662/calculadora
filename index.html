@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
 
 <body onload="init();">
     <table class="calculadora">
+        <!-- Modo día/noche -->
         <tr>
             <td colspan="4" class="switch-container">
                 <button class="switch" id="switch">
@@ -28,11 +29,13 @@
                 </button>
             </td>
         </tr>
+        <!-- Pantalla -->
         <tr>
             <td colspan="4" class="resultado">
                 <span id="resultado"></span>
             </td>
         </tr>
+        <!-- Teclado -->
         <tr>
             <td><button id="siete" class="numero">7</button></td>
             <td><button id="ocho" class="numero">8</button></td>
@@ -58,7 +61,7 @@
             <td><button id="suma" class="operador">+</button></td>
         </tr>
     </table>
+    <!-- Funciones -->
     <script src="js/functions.js"></script>
-
 </body>
 </html>

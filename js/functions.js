@@ -24,7 +24,7 @@ function init() {
   var cero = document.getElementById("cero");
 }
 
-//Eventos de click
+//Eventos de click a los botones de número
 uno.onclick = function (e) {
   resultado.textContent = resultado.textContent + "1";
 };
@@ -55,9 +55,11 @@ nueve.onclick = function (e) {
 cero.onclick = function (e) {
   resultado.textContent = resultado.textContent + "0";
 };
+//Evento de click al botón de limpiar
 reset.onclick = function (e) {
   resetear();
 };
+//Eventos de click a los botones de operaciones
 suma.onclick = function (e) {
   operandoa = resultado.textContent;
   operacion = "+";
@@ -83,9 +85,11 @@ igual.onclick = function (e) {
   resolver();
 };
 
+//Limpia la pantalla cada que presionamos una operación
 function limpiar() {
   resultado.textContent = "";
 }
+//Limpia y deja en 0 la calculadora
 function resetear() {
   resultado.textContent = "";
   operandoa = 0;
@@ -93,6 +97,7 @@ function resetear() {
   operacion = "";
 }
 
+//Determina la operación a realizar 
 function resolver() {
   var res = 0;
   switch (operacion) {
@@ -113,12 +118,12 @@ function resolver() {
   resultado.textContent = res;
 }
 
-
+//Evento para modo día/noche
 document.querySelector('#switch').addEventListener('click', function(){
-  console.log("hola");
+  //Añade/elimina la clase 'dark' del modo día/noche
   document.querySelector('table').classList.toggle('dark');
-  var desactivados = document.querySelectorAll('svg')/* .classList.toggle('desactivado'); */
-  console.log(desactivados.length);
+  //Cambia el color de los iconos día/noche
+  var desactivados = document.querySelectorAll('svg')
   for(var i=0; i<desactivados.length; i++) {
     desactivados[i].classList.toggle('desactivado')
   }
