@@ -1,7 +1,7 @@
 .calculadora{
     margin:auto;
     padding: 2.5% 5%;
-    background-color:#A3EEE9;
+    background-color:#F19696;
     width:100%;
     height:98vh;
     border-radius: 15px;
@@ -75,7 +75,13 @@ td{
     align-items: center;
 }
 
+/* span, button{
+    font-size: clamp(37px, 65px, 75px ) !important;
+} */
 
+.desactivado{
+    color: rgba(0, 0, 0, 0.23);
+ }
 .switch-container{
     height: 8%;
 }
@@ -92,4 +98,25 @@ td{
         height: 30%;
     }
  } 
+
+.dark{
+    background: #000000;
+    color: #FFFFFF;
+}
+.calculadora.dark td button.operador
+{
+background-color: #C8A016;
+color: #FFFFFF;
+}
+.calculadora.dark td button.numero,
+.calculadora.dark td .switch,
+.calculadora.dark td #resultado
+{
+background-color: #232121;
+color: #FFFFFF;
+}
+
+.dark .desactivado{
+   color:  rgba(255, 255, 255, 0.38);
+}
 

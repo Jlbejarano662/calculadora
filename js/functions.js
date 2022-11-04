@@ -112,3 +112,15 @@ function resolver() {
   resetear();
   resultado.textContent = res;
 }
+
+
+document.querySelector('#switch').addEventListener('click', function(){
+  console.log("hola");
+  document.querySelector('table').classList.toggle('dark');
+  var desactivados = document.querySelectorAll('svg')/* .classList.toggle('desactivado'); */
+  console.log(desactivados.length);
+  for(var i=0; i<desactivados.length; i++) {
+    desactivados[i].classList.toggle('desactivado')
+  }
+}
+)
